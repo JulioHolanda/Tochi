@@ -4,11 +4,14 @@ def media(valor1, valor2):
 
 def addstd(nome,cpf,matricula,turma,nota1,nota2):
     import csv
-
-    with open('./studentData.csv', 'w') as csvfile:
-        writer = csv.writer(csvfile, delimiter=',')
+    from csv import writer
     
-        writer.writerow([nome,cpf,matricula,turma,nota1,nota2])
+    list = [nome,cpf,matricula,turma,nota1,nota2]
+
+    with open('./studentData.csv', 'a') as f_object:
+        writer_object = writer(f_object)
+        writer_object.writerow(list)
+        f_object.close()
 
 def dados():
     print("Insira os dados do novo estudante:")
