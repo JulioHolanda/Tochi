@@ -1,3 +1,3 @@
 import funcoes
 
-funcoes.dados()
+funcoes.procura()
