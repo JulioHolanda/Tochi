@@ -11,20 +11,20 @@ def pergunta_filtro():
     print("Nota 1 [4]\nNota 2 [5]")
     
 
-def res_filtro(x):
+def resp_filtro(x):
     if x == 0:
-        ansr = input("Insira o nome: ").upper()
+        resp = input("Insira o nome: ").upper()
     elif x == 1:
-        ansr = input("insira o CPF: ")
+        resp = input("insira o CPF: ")
     elif x == 2:
-        ansr = input("insira o número da matrícula: ")
+        resp = input("insira o número da matrícula: ")
     elif x == 3:
-        ansr = input("insira a turma: ")
+        resp = input("insira a turma: ")
     elif x == 4:
-        ansr = input("insira a NOTA 1 (com casa decimal): ")
+        resp = input("insira a NOTA 1 (com casa decimal): ")
     elif x == 5:
-        ansr = input("insira a Nota 2 (com casa decimal): ")
-    return ansr
+        resp = input("insira a Nota 2 (com casa decimal): ")
+    return resp
 
 def procura():
 
@@ -40,33 +40,34 @@ def procura():
         i = int(input())
         print()
 
-    search = res_filtro(i)
+    caca_dado = resp_filtro(i)
     print()
 
-    with open('./studentData.csv','r') as csv_file:
-        reader = csv.reader(csv_file)
+    with open('./studentData.csv','r') as readData_file:
+        reader = csv.reader(readData_file)
 
         ## realiza a leitura das linhas
         for line in reader:
-            if line[i] == search:
+            if line[i] == caca_dado:
                 print(line)
                 existe +=1
         
         if existe == 0:
             print("Dado errado ou não cadastrado\n")
 
-        csv_file.close()
+        readData_file.close()
     print()
 
+# addstd = add student
 def addstd(nome,cpf,matricula,turma,nota1,nota2):
     
     list = [nome,cpf,matricula,turma,nota1,nota2]
 
-    with open('./studentData.csv', 'a') as f_object:
-        writer_object = csv.writer(f_object)
+    with open('./studentData.csv', 'a') as data_adder:
+        writer_object = csv.writer(data_adder)
         writer_object.writerow(list)
         
-        f_object.close()
+        data_adder.close()
 
 def novos_dados():
     print("Insira os dados do novo estudante:")

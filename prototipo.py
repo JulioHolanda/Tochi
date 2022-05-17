@@ -2,4 +2,6 @@ import funcoes
 import os
 os.system("cls")
 
-funcoes.procura()
+#funcoes.novos_dados()
+
+#funcoes.procura()
