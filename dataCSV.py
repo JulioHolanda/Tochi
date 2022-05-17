@@ -1,7 +1,7 @@
 import csv
 
-with open('./studentData.csv', 'w', newline='') as csv_file:
-    writer = csv.writer(csv_file, delimiter=',')
+with open('./studentData.csv', 'w', newline='') as data_file:
+    writer = csv.writer(data_file, delimiter=',')
     
     writer.writerow(["NOME","CPF","MATRICULA","TURMA","NOTA1","NOTA2"])
     writer.writerow([
@@ -29,7 +29,7 @@ with open('./studentData.csv', 'w', newline='') as csv_file:
         4.0
     ])
     writer.writerow([
-        "GUILHRME",
+        "GUILHERME",
         "20.294.224-17",
         6666666,
         "#7A",
