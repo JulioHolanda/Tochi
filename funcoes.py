@@ -40,7 +40,7 @@ def procura():
         i = int(input())
         print()
 
-    caca_dado = resp_filtro(i)
+    data_hunt = resp_filtro(i)
     print()
 
     with open('./studentData.csv','r') as readData_file:
@@ -48,7 +48,7 @@ def procura():
 
         ## realiza a leitura das linhas
         for line in reader:
-            if line[i] == caca_dado:
+            if line[i] == data_hunt:
                 print(line)
                 existe +=1
         
