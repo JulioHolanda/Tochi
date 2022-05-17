@@ -3,7 +3,6 @@ def media(valor1, valor2):
     return media
 
 def addstd(nome,cpf,matricula,turma,nota1,nota2):
-    import csv
     from csv import writer
     
     list = [nome,cpf,matricula,turma,nota1,nota2]
