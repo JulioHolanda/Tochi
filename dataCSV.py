@@ -17,7 +17,7 @@ with open('projetos1-g12/studentData.csv', 'w', newline='') as data_file:
         "100.240.000-33",
         102030,
         "#5A",
-        5.0,
+        6.5,
         8.0
     ])
     writer.writerow([
@@ -34,7 +34,7 @@ with open('projetos1-g12/studentData.csv', 'w', newline='') as data_file:
         6666666,
         "#7A",
         7.5,
-        8.0
+        5.0
     ])
     
     data_file.close()

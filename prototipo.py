@@ -4,4 +4,4 @@ os.system("cls")
 
 #funcoes.novos_dados()
 
-#funcoes.procura()
+funcoes.procura()
