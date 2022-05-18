@@ -1,6 +1,6 @@
 import csv
 
-with open('./studentData.csv', 'w', newline='') as data_file:
+with open('projetos1-g12/studentData.csv', 'w', newline='') as data_file:
     writer = csv.writer(data_file, delimiter=',')
     
     writer.writerow(["NOME","CPF","MATRICULA","TURMA","NOTA1","NOTA2"])
@@ -36,3 +36,5 @@ with open('./studentData.csv', 'w', newline='') as data_file:
         7.5,
         8.0
     ])
+    
+    data_file.close()

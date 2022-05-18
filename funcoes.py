@@ -43,7 +43,7 @@ def procura():
     data_hunt = resp_filtro(i)
     print()
 
-    with open('./studentData.csv','r') as readData_file:
+    with open('projetos1-g12/studentData.csv','r') as readData_file:
         reader = csv.reader(readData_file)
 
         ## realiza a leitura das linhas
@@ -63,7 +63,7 @@ def addstd(nome,cpf,matricula,turma,nota1,nota2):
     
     list = [nome,cpf,matricula,turma,nota1,nota2]
 
-    with open('./studentData.csv', 'a') as data_adder:
+    with open('projetos1-g12/studentData.csv', 'a') as data_adder:
         writer_object = csv.writer(data_adder)
         writer_object.writerow(list)
         
