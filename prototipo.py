@@ -1,7 +1,9 @@
-import funcoes
+import func
 import os
 os.system("cls")
 
-#funcoes.novos_dados()
+#func.novos_dados()
 
-funcoes.procura()
+#func.procura()
+
+func.del_data()
