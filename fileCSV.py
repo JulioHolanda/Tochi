@@ -62,3 +62,10 @@ with open('projetos1-g12/studentData.csv', 'w', newline='') as data_file:
     ])
 
     data_file.close()
+
+with open('projetos1-g12/junkData.csv', 'w', newline='') as data_junk:
+    writer = csv.writer(data_junk, delimiter=',')
+    
+    writer.writerow(["NOME","MATRICULA","TURMA","NOTA1","NOTA2"])
+
+    data_junk.close()

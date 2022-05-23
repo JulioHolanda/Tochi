@@ -2,8 +2,8 @@ import func
 import os
 os.system("cls")
 
-#func.novos_dados()
+func.novos_dados()
 
 #func.procura()
 
-func.del_data()
+#func.del_data()
