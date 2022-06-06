@@ -67,7 +67,7 @@ def addstd(nome, matricula, turma, nota1, nota2):
 
     list = [nome, matricula, turma, nota1, nota2]
 
-    with open('projetos1-g12/studentData.csv', 'a', newline='') as data_adder:
+    with open('projetos1-g12/studentData.csv', 'a') as data_adder:
         writer_object = csv.writer(data_adder)
         writer_object.writerow(list)
 
