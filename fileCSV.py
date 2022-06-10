@@ -132,3 +132,46 @@ with open('junkProfData.csv', 'w', newline='') as data_junk:
     writer.writerow(["NOME","MATÉRIA","CADASTRO","TURMA","COMENTÁRIOS"])
 
     data_junk.close()
+
+with open('especData.csv', 'w', newline='') as data_file:
+    writer = csv.writer(data_file, delimiter=',')
+    
+    writer.writerow(["NOME","CONTATO","ÁREA DE ATUAÇÃO","LOCALIZAÇÃO"])
+    writer.writerow([
+        "ALICE",
+        "(81) 1234-5678",
+        "PSICOLOGIA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "ROBERTO",
+        "(81) 9876-5432",
+        "PSICOLOGIA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "CARLOS",
+        "(81) 1234-5678",
+        "PSIQUIATRIA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "EDUARDO",
+        "(81) 9876-5432",
+        "PSICOLOGIA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "ERIKA",
+        "(81) 1234-5678",
+        "PSICOLOGIA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "GILBERTO",
+        "(81) 9876-5432",
+        "PSIQUIATRIA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+
+    data_file.close()

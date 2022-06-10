@@ -3,7 +3,7 @@ import webbrowser
 import os
 os.system("cls")
 
-adiciona_pessoa=open('conta.txt', 'a')
+"""adiciona_pessoa=open('conta.txt', 'a')
 ler_pessoa=open('conta.txt', 'r')
 resposta=input('Você já possui uma conta? \n[S]sim\t[N]não: ').lower()
 if resposta=='s':
@@ -23,7 +23,7 @@ if resposta=='n':
             Nome_Usuário=input('Este nome de usuário já existe. Por favor, insira outro nome: ')
         print('Sua conta foi criada com sucesso!')
 adiciona_pessoa.close()
-ler_pessoa.close()
+ler_pessoa.close()"""
 
 print("Bem vindo ao TOCHI!\n\n-- Menu Principal --\nO que gostaria de acessar?")
 print(
@@ -38,6 +38,7 @@ caminho = int(input())
 
 while caminho > 0 and caminho < 5:
     print('começo while')
+    
     while caminho == 1:
         print('\n-- ESTUDANTES --\n'
             '[1] Vizualizar Todos\n'
@@ -47,6 +48,7 @@ while caminho > 0 and caminho < 5:
             '[0] voltar'
         )
         caminho = int(input())
+        
         if caminho == 1:
             func.listagem()
         elif caminho == 2:
@@ -57,6 +59,7 @@ while caminho > 0 and caminho < 5:
             func.del_data()
         elif caminho == 0:
             break
+    
     while caminho == 2:
         print(
             '\n-- PROFESSORES --\n'
@@ -67,6 +70,7 @@ while caminho > 0 and caminho < 5:
             '[0] voltar'
         )
         caminho = int(input())
+        
         if caminho == 1:
             func.listagem_prof()
         elif caminho == 2:
@@ -77,6 +81,7 @@ while caminho > 0 and caminho < 5:
             func.del_data_prof()
         elif caminho == 0:
             break
+    
     while caminho == 3:
         print(
             '\n-- METODOLIGAS --\n'
@@ -86,6 +91,7 @@ while caminho > 0 and caminho < 5:
             '[0] voltar'
         )
         caminho = int(input())
+        
         if caminho == 1:
             print('metodologia 1 aqui')
         elif caminho == 2:
@@ -94,21 +100,23 @@ while caminho > 0 and caminho < 5:
             print('metodologia 3 aqui')
         elif caminho == 0:
             break
+    
     while caminho == 4:
         print(
             '\n-- SUPORTE --\n'
             '[1] Associação Brasileira do Defict de Atenção (ABDA)\n'
             '[2] Formulário TDHA (SNAP - IV)\n'
-            '[3] Contatos Profissionais da área\n'
+            '[3] Contatos Profissionais da Área\n'
             '[0] voltar'
         )
         caminho = int(input())
+        
         if caminho == 1:
             webbrowser.open("https://tdah.org.br/")
         elif caminho == 2:
             webbrowser.open("https://tdah.org.br/diagnostico-criancas/")
         elif caminho == 3:
-            print('contatos aqui')
+            func.listagem_espec()
         elif caminho == 0:
             break
     

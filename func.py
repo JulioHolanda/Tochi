@@ -272,7 +272,7 @@ def listagem():
 
         for line in reader:
             for i in range(len(line)):
-                print(f"{line[i]:^20}", end='' )
+                print(f"{line[i]:^13}", end='' )
             print()
 
         readData_file.close()
@@ -280,6 +280,18 @@ def listagem():
 def listagem_prof():
 
     with open('profData.csv', 'r') as readData_file:
+        reader = csv.reader(readData_file)
+
+        for line in reader:
+            for i in range(len(line)):
+                print(f"{line[i]:^20}", end='' )
+            print()
+
+        readData_file.close()
+
+def listagem_espec():
+
+    with open('especData.csv', 'r') as readData_file:
         reader = csv.reader(readData_file)
 
         for line in reader:
