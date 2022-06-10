@@ -1,6 +1,6 @@
 import csv
 
-with open('projetos1-g12/studentData.csv', 'w', newline='') as data_file:
+with open('studentData.csv', 'w', newline='') as data_file:
     writer = csv.writer(data_file, delimiter=',')
     
     writer.writerow(["NOME","MATRICULA","TURMA","NOTA1","NOTA2"])
@@ -63,9 +63,72 @@ with open('projetos1-g12/studentData.csv', 'w', newline='') as data_file:
 
     data_file.close()
 
-with open('projetos1-g12/junkData.csv', 'w', newline='') as data_junk:
+with open('junkData.csv', 'w', newline='') as data_junk:
     writer = csv.writer(data_junk, delimiter=',')
     
     writer.writerow(["NOME","MATRICULA","TURMA","NOTA1","NOTA2"])
+
+    data_junk.close()
+
+with open('profData.csv', 'w', newline='') as data_file:
+    writer = csv.writer(data_file, delimiter=',')
+    
+    writer.writerow(["NOME","CADASTRO","TURMA","MATÉRIA","COMENTÁRIOS"])
+    writer.writerow([
+        "LESSA",
+        203040,
+        "5B",
+        "CIÊNCIAS DA NATUREZA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "ADRÉIA",
+        102030,
+        "5A",
+        "CIÊNCIAS DA NATUREZA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "DENNIS",
+        605070,
+        "7C",
+        "MATEMÁTICA",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "RAFAEL",
+        6666666,
+        "7A",
+        "CIÊNCIAS HUMANAS",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "MARCOS",
+        454545,
+        "7A",
+        "CIÊNCIAS HUMANAS",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "ELIANA",
+        505060,
+        "7B",
+        "CIÊNCIAS HUMANAS",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+    writer.writerow([
+        "ELIZATEBE",
+        334453,
+        "5A",
+        "LINGUÁGENS",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ])
+
+    data_file.close()
+
+with open('junkProfData.csv', 'w', newline='') as data_junk:
+    writer = csv.writer(data_junk, delimiter=',')
+    
+    writer.writerow(["NOME","CADASTRO","TURMA","MATÉRIA","COMENTÁRIOS"])
 
     data_junk.close()
