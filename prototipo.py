@@ -93,11 +93,11 @@ while caminho > 0 and caminho < 5:
         caminho = int(input())
         
         if caminho == 1:
-            print('metodologia 1 aqui')
+            func.metodologias()
         elif caminho == 2:
-            print('metodologia 2 aqui')
+            func.metodologias()
         elif caminho == 3:
-            print('metodologia 3 aqui')
+            func.metodologias()
         elif caminho == 0:
             break
     
