@@ -73,54 +73,54 @@ with open('junkData.csv', 'w', newline='') as data_junk:
 with open('profData.csv', 'w', newline='') as data_file:
     writer = csv.writer(data_file, delimiter=',')
     
-    writer.writerow(["NOME","CADASTRO","TURMA","MATÉRIA","COMENTÁRIOS"])
+    writer.writerow(["NOME","CADASTRO","MATÉRIA","TURMA","COMENTÁRIOS"])
     writer.writerow([
         "LESSA",
         203040,
-        "5B",
         "CIÊNCIAS DA NATUREZA",
+        "5B",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ])
     writer.writerow([
         "ADRÉIA",
         102030,
-        "5A",
         "CIÊNCIAS DA NATUREZA",
+        "5A",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ])
     writer.writerow([
         "DENNIS",
         605070,
-        "7C",
         "MATEMÁTICA",
+        "7C",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ])
     writer.writerow([
         "RAFAEL",
         6666666,
-        "7A",
         "CIÊNCIAS HUMANAS",
+        "7A",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ])
     writer.writerow([
         "MARCOS",
         454545,
-        "7A",
         "CIÊNCIAS HUMANAS",
+        "7A",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ])
     writer.writerow([
         "ELIANA",
         505060,
-        "7B",
         "CIÊNCIAS HUMANAS",
+        "7B",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ])
     writer.writerow([
         "ELIZATEBE",
         334453,
-        "5A",
         "LINGUÁGENS",
+        "5A",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ])
 
@@ -129,6 +129,6 @@ with open('profData.csv', 'w', newline='') as data_file:
 with open('junkProfData.csv', 'w', newline='') as data_junk:
     writer = csv.writer(data_junk, delimiter=',')
     
-    writer.writerow(["NOME","CADASTRO","TURMA","MATÉRIA","COMENTÁRIOS"])
+    writer.writerow(["NOME","MATÉRIA","CADASTRO","TURMA","COMENTÁRIOS"])
 
     data_junk.close()

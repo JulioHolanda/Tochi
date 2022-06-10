@@ -3,6 +3,28 @@ import webbrowser
 import os
 os.system("cls")
 
+adiciona_pessoa=open('conta.txt', 'a')
+ler_pessoa=open('conta.txt', 'r')
+resposta=input('Você já possui uma conta? \n[S]sim\t[N]não: ').lower()
+if resposta=='s':
+    cadastrado=input('Insira seu nome ou email:')
+    if cadastrado in ler_pessoa:
+        print(f'Bem vindo(a) {cadastrado}')
+    else:
+        print('Nome ou email não encontrado. Crie uma conta ou tente novamente.')
+if resposta=='n':
+    resposta2=input('Deseja criar uma conta? \n[s]sim\t[n]não: ').lower()
+    if resposta2=='n':
+        print('Tochi agradece sua visita. Até a próxima!')
+    elif resposta2=='s':
+        cadastro=adiciona_pessoa.writelines(input('Insira um email válido: '))
+        Nome_Usuário=adiciona_pessoa.writelines(input('Insira um nome de usuário: '))
+        if Nome_Usuário in ler_pessoa:
+            Nome_Usuário=input('Este nome de usuário já existe. Por favor, insira outro nome: ')
+        print('Sua conta foi criada com sucesso!')
+adiciona_pessoa.close()
+ler_pessoa.close()
+
 print("Bem vindo ao TOCHI!\n\n-- Menu Principal --\nO que gostaria de acessar?")
 print(
     "[1] Estudantes\n"
@@ -18,6 +40,7 @@ while caminho > 0 and caminho < 5:
     print('começo while')
     while caminho == 1:
         print('\n-- ESTUDANTES --\n'
+            '[1] Vizualizar Todos\n'
             '[1] Pesquisar\n'
             '[2] Adicionar\n'
             '[3] Remover\n'
@@ -25,27 +48,32 @@ while caminho > 0 and caminho < 5:
         )
         caminho = int(input())
         if caminho == 1:
-            func.procura()
+            func.listagem()
         elif caminho == 2:
-            func.novos_dados()
+            func.procura()
         elif caminho == 3:
+            func.novos_dados()
+        elif caminho == 4:
             func.del_data()
         elif caminho == 0:
             break
     while caminho == 2:
         print(
             '\n-- PROFESSORES --\n'
-            '[1] Pesquisar\n'
-            '[2] Adicionar\n'
-            '[3] Remover\n'
+            '[1] Vizualizar Todos\n'
+            '[2] Pesquisar\n'
+            '[3] Adicionar\n'
+            '[4] Remover\n'
             '[0] voltar'
         )
         caminho = int(input())
         if caminho == 1:
-            func.procura_prof()
+            func.listagem_prof()
         elif caminho == 2:
-            func.novos_dados_prof()
+            func.procura_prof()
         elif caminho == 3:
+            func.novos_dados_prof()
+        elif caminho == 4:
             func.del_data_prof()
         elif caminho == 0:
             break

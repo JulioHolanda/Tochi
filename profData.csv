@@ -1,8 +1,8 @@
-NOME,CADASTRO,TURMA,MATÉRIA,COMENTÁRIOS
-LESSA,203040,5B,CIÊNCIAS DA NATUREZA,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-ADRÉIA,102030,5A,CIÊNCIAS DA NATUREZA,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-DENNIS,605070,7C,MATEMÁTICA,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-RAFAEL,6666666,7A,CIÊNCIAS HUMANAS,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-MARCOS,454545,7A,CIÊNCIAS HUMANAS,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-ELIANA,505060,7B,CIÊNCIAS HUMANAS,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-ELIZATEBE,334453,5A,LINGUÁGENS,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+NOME,CADASTRO,MATÉRIA,TURMA,COMENTÁRIOS
+LESSA,203040,CIÊNCIAS DA NATUREZA,5B,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+ADRÉIA,102030,CIÊNCIAS DA NATUREZA,5A,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+DENNIS,605070,MATEMÁTICA,7C,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+RAFAEL,6666666,CIÊNCIAS HUMANAS,7A,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+MARCOS,454545,CIÊNCIAS HUMANAS,7A,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+ELIANA,505060,CIÊNCIAS HUMANAS,7B,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+ELIZATEBE,334453,LINGUÁGENS,5A,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

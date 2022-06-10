@@ -1,27 +1,5 @@
 import csv
 
-adiciona_pessoa=open('conta.txt', 'a')
-ler_pessoa=open('conta.txt', 'r')
-resposta=input('Você já possui uma conta? \n[S]sim\t[N]não: ').lower()
-if resposta=='s':
-    cadastrado=input('Insira seu nome ou email:')
-    if cadastrado in ler_pessoa:
-        print(f'Bem vindo(a) {cadastrado}')
-    else:
-        print('Nome ou email não encontrado. Crie uma conta ou tente novamente.')
-if resposta=='n':
-    resposta2=input('Deseja criar uma conta? \n[s]sim\t[n]não: ').lower()
-    if resposta2=='n':
-        print('Tochi agradece sua visita. Até a próxima!')
-    elif resposta2=='s':
-        cadastro=adiciona_pessoa.writelines(input('Insira um email válido: '))
-        Nome_Usuário=adiciona_pessoa.writelines(input('Insira um nome de usuário: '))
-        if Nome_Usuário in ler_pessoa:
-            Nome_Usuário=input('Este nome de usuário já existe. Por favor, insira outro nome: ')
-        print('Sua conta foi criada com sucesso!')
-adiciona_pessoa.close()
-ler_pessoa.close()
-
 def media(valor1, valor2):
     media = (valor1 + valor2)/2
 
@@ -36,7 +14,7 @@ def pergunta_filtro():
 
 def pergunta_filtro_prof():
     print("Deseja procurar por:")
-    print("Nome [1]\nCadastro [2]\nTurma [3]\nMatéria [4]")
+    print("Nome [1]\nCadastro [2]\nMatéria [3]\nTurma [4]")
 
 def resp_filtro(x):
     if x == 1:
@@ -59,9 +37,9 @@ def resp_filtro_prof(x):
     elif x == 2:
         resp = input("insira o número dde cadastro: ")
     elif x == 3:
-        resp = input("insira a turma: ").upper()
-    elif x == 4:
         resp = input("insira a matéria: ")
+    elif x == 4:
+        resp = input("insira a turma: ").upper()
         print()
 
     return resp
@@ -144,9 +122,9 @@ def addstd(nome, matricula, turma, nota1, nota2):
 
         data_adder.close()
 
-def addtch(nome, cadastro, turma, materia, comentario):
+def addtch(nome, cadastro, materia, turma, comentario):
 
-    list = [nome, cadastro, turma, materia, comentario]
+    list = [nome, cadastro, materia, turma, comentario]
 
     with open('profData.csv', 'a') as data_adder:
         writer_object = csv.writer(data_adder)
@@ -168,11 +146,11 @@ def novos_dados_prof():
     print("Insira os dados do novo professor(a):")
     nome = input("NOME: ").upper()
     cadastr = int(input("CADASTRO: "))
-    turma = input("TURMA: ").upper()
     materia = float(input("MATÉRIA: "))
+    turma = input("TURMA: ").upper()
     coment = float(input("COMENTÁRIO: "))
 
-    addstd(nome, cadastr, turma, materia, coment)
+    addstd(nome, cadastr, materia, turma, coment)
 
 
 def del_data():
@@ -286,3 +264,27 @@ def del_data_prof():
         if existe == 0:
             print("\nDado errado ou não cadastrado")
     print()
+
+def listagem():
+
+    with open('studentData.csv', 'r') as readData_file:
+        reader = csv.reader(readData_file)
+
+        for line in reader:
+            for i in range(len(line)):
+                print(f"{line[i]:^20}", end='' )
+            print()
+
+        readData_file.close()
+
+def listagem_prof():
+
+    with open('profData.csv', 'r') as readData_file:
+        reader = csv.reader(readData_file)
+
+        for line in reader:
+            for i in range(len(line)):
+                print(f"{line[i]:^20}", end='' )
+            print()
+
+        readData_file.close()
