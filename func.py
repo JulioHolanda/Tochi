@@ -1,10 +1,68 @@
 import csv
 
-def media(valor1, valor2):
-    media = (valor1 + valor2)/2
+def login():
+    
+    existe = 0
 
-    return media
+    resposta=input(
+        '\n  -+- Tochi -+-\n\nVocê já possui uma conta? \n[S]sim\t[N]não: '
+        ).lower()
+    
+    if resposta=='s':
+        while existe == 0:
+            cadastrado=input('\nInsira seu nome ou email:').upper()
+            
+            with open('contas.csv', 'r+', newline='') as arquivo:
+                leia=csv.reader(arquivo)
+                
+                for linha in leia:
+                        if cadastrado in linha:
+                            print(f'\nOlá, {linha[1]}')
+                            existe +=1
+                            break
+                if existe == 0:    
+                        print(
+                            '\nUsuário não encontrado.'
+                            'Crie uma conta ou tente novamente.')
+                arquivo.close()
 
+    if resposta=='n':
+        print('\n - Criação de conta - ')
+
+        email=input('Insira um email válido: ').upper()
+        with open('contas.csv', 'r+', newline='') as arquivo:
+            leia=csv.reader(arquivo)
+
+            for linha in leia:
+                while email in linha:
+                    email=input(
+                        'Este email já está cadastrado.'
+                        'Por favor, insira outro: ').upper()
+
+            arquivo.close()   
+        
+        with open('contas.csv', 'r+', newline='') as arquivo:
+            leia=csv.reader(arquivo)
+
+            nome_usuario=input('Insira um nome de usuário:').upper()            
+            for linha in leia:
+                while nome_usuario in linha:
+                    nome_usuario=input(
+                        'Este nome de usuário já existe.'
+                        'Por favor, insira outro: ').upper()
+
+            arquivo.close()   
+
+        with open('contas.csv', 'r+', newline='') as arquivo:
+            leia=csv.reader(arquivo)
+    
+
+            list=[email,nome_usuario]
+            writer=csv.writer(arquivo)
+            writer.writerow(list)
+            print('\nSua conta foi criada com sucesso!')
+
+            arquivo.close()
 
 def pergunta_filtro():
     print("\nDeseja procurar por:")

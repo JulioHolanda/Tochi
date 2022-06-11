@@ -3,29 +3,10 @@ import webbrowser
 import os
 os.system("cls")
 
-"""adiciona_pessoa=open('conta.txt', 'a')
-ler_pessoa=open('conta.txt', 'r')
-resposta=input('Você já possui uma conta? \n[S]sim\t[N]não: ').lower()
-if resposta=='s':
-    cadastrado=input('Insira seu nome ou email:')
-    if cadastrado in ler_pessoa:
-        print(f'Bem vindo(a) {cadastrado}')
-    else:
-        print('Nome ou email não encontrado. Crie uma conta ou tente novamente.')
-if resposta=='n':
-    resposta2=input('Deseja criar uma conta? \n[s]sim\t[n]não: ').lower()
-    if resposta2=='n':
-        print('Tochi agradece sua visita. Até a próxima!')
-    elif resposta2=='s':
-        cadastro=adiciona_pessoa.writelines(input('Insira um email válido: '))
-        Nome_Usuário=adiciona_pessoa.writelines(input('Insira um nome de usuário: '))
-        if Nome_Usuário in ler_pessoa:
-            Nome_Usuário=input('Este nome de usuário já existe. Por favor, insira outro nome: ')
-        print('Sua conta foi criada com sucesso!')
-adiciona_pessoa.close()
-ler_pessoa.close()"""
+func.login()
 
-print("Bem vindo ao TOCHI!\n\n-- Menu Principal --\nO que gostaria de acessar?")
+print("\nBem vindo(a) ao TOCHI!\n\n"
+    "-- Menu Principal --\nO que gostaria de acessar?")
 print(
     "[1] Estudantes\n"
     "[2] Professores\n"
@@ -95,7 +76,7 @@ while caminho > 0 and caminho < 5:
         )
         caminho = int(input())
         print()
-        
+
         if caminho == 1:
             func.metodologias(1)
         elif caminho == 2:
@@ -138,4 +119,4 @@ while caminho > 0 and caminho < 5:
     )
     caminho = int(input())
 
-print("\n-+- PROGRAMA ENCERRADO -+-\n")
+print("\nTochi agradece sua visita. Até a próxima!\n-+- PROGRAMA ENCERRADO -+-\n")

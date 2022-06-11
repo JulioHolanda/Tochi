@@ -1,5 +1,14 @@
 import csv
 
+with open('contas.csv', 'w', newline='') as contas:
+    writer = csv.writer(contas)
+
+    writer.writerow(["EMAIL","USUÁRIO"])
+    writer.writerow(["JULIO@HOLANDA","JULIO"])
+    writer.writerow(["VINI@PAZ","VINICIUS"])
+
+    contas.close()
+
 with open('studentData.csv', 'w', newline='') as data_file:
     writer = csv.writer(data_file, delimiter=',')
     
