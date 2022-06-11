@@ -299,3 +299,11 @@ def listagem_espec():
             print()
 
         readData_file.close()
+        
+def  metodologias():
+    
+    fileName = "metodologia" + caminho + ".txt"
+
+    with open(fileName, 'r') as metodologia:
+        motodologiasRead = metodologia.read()
+        print(metodologiaRead)
