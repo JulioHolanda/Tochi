@@ -11,7 +11,7 @@ print(
     "[1] Estudantes\n"
     "[2] Professores\n"
     "[3] Metodologias\n"
-    "[4] Suporte\n"
+    "[4] Especialistas e Referências\n"
     "[0] Sair"
 )
 
@@ -90,7 +90,7 @@ while caminho > 0 and caminho < 5:
     
     while caminho == 4:
         print(
-            '\n-- SUPORTE --\n'
+            '\n-- ESPECIALISTAS E REFERÊNCIAS --\n'
             '[1] Associação Brasileira do Defict de Atenção (ABDA)\n'
             '[2] Formulário TDHA (SNAP - IV)\n'
             '[3] Contatos Profissionais da Área\n'
@@ -107,7 +107,7 @@ while caminho > 0 and caminho < 5:
         elif caminho == 0:
             break
         
-        caminho =3
+        caminho =4
     
     print("\n-- Menu Principal --\nO que gostaria de acessar?")
     print(
