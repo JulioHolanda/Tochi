@@ -7,14 +7,16 @@ def media(valor1, valor2):
 
 
 def pergunta_filtro():
-    print("Deseja procurar por:")
+    print("\nDeseja procurar por:")
     print("Nome [1]")
     print("Matrícula [2]\nTurma [3]")
     print("Nota 1 [4]\nNota 2 [5]")
 
+
 def pergunta_filtro_prof():
-    print("Deseja procurar por:")
+    print("\nDeseja procurar por:")
     print("Nome [1]\nCadastro [2]\nMatéria [3]\nTurma [4]")
+
 
 def resp_filtro(x):
     if x == 1:
@@ -30,6 +32,7 @@ def resp_filtro(x):
         print()
 
     return resp
+
 
 def resp_filtro_prof(x):
     if x == 1:
@@ -76,7 +79,7 @@ def procura():
 
         if existe == 0:
             print("\nDado errado ou não cadastrado")
-    print()
+
 
 def procura_prof():
 
@@ -109,48 +112,42 @@ def procura_prof():
 
         if existe == 0:
             print("\nDado errado ou não cadastrado")
-    print()
 
-# addstd = add student
-def addstd(nome, matricula, turma, nota1, nota2):
-
-    list = [nome, matricula, turma, nota1, nota2]
-
-    with open('studentData.csv', 'a') as data_adder:
-        writer_object = csv.writer(data_adder)
-        writer_object.writerow(list)
-
-        data_adder.close()
-
-def addtch(nome, cadastro, materia, turma, comentario):
-
-    list = [nome, cadastro, materia, turma, comentario]
-
-    with open('profData.csv', 'a') as data_adder:
-        writer_object = csv.writer(data_adder)
-        writer_object.writerow(list)
-
-        data_adder.close()
 
 def novos_dados():
-    print("Insira os dados do novo estudante:")
+    print("\nInsira os dados do novo estudante:")
     nome = input("NOME: ").upper()
     matrc = int(input("MATRÍCULA: "))
     turma = input("TURMA: ").upper()
     nota1 = float(input("1ª nota: "))
-    nota2 = float(input("2ª nota: "))
+    nota2 =float(input("2ª nota: "))
 
-    addstd(nome, matrc, turma, nota1, nota2)
+    list = [nome, matrc, turma, nota1, nota2]
+
+    with open('studentData.csv', 'a', newline='') as data_adder:
+        writer_object = csv.writer(data_adder)
+        writer_object.writerow(list)
+
+        data_adder.close()
+    print("\n- Novo estudante cadastrado - ")
+
 
 def novos_dados_prof():
-    print("Insira os dados do novo professor(a):")
+    print("\nInsira os dados do novo professor(a):")
     nome = input("NOME: ").upper()
     cadastr = int(input("CADASTRO: "))
-    materia = float(input("MATÉRIA: "))
+    materia = input("MATÉRIA: ").upper()
     turma = input("TURMA: ").upper()
-    coment = float(input("COMENTÁRIO: "))
+    coment = input("COMENTÁRIO: ").upper()
 
-    addstd(nome, cadastr, materia, turma, coment)
+    list = [nome, cadastr, materia, turma, coment]
+
+    with open('profData.csv', 'a', newline='') as data_adder:
+        writer_object = csv.writer(data_adder)
+        writer_object.writerow(list)
+
+        data_adder.close()
+    print("\n- Novo professor cadastrado -")
 
 
 def del_data():
@@ -207,7 +204,7 @@ def del_data():
 
         if existe == 0:
             print("\nDado errado ou não cadastrado")
-    print()
+
 
 def del_data_prof():
 
@@ -263,7 +260,7 @@ def del_data_prof():
 
         if existe == 0:
             print("\nDado errado ou não cadastrado")
-    print()
+
 
 def listagem():
 
@@ -277,6 +274,7 @@ def listagem():
 
         readData_file.close()
 
+
 def listagem_prof():
 
     with open('profData.csv', 'r') as readData_file:
@@ -288,6 +286,7 @@ def listagem_prof():
             print()
 
         readData_file.close()
+
 
 def listagem_espec():
 

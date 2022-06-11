@@ -37,14 +37,13 @@ print(
 caminho = int(input())
 
 while caminho > 0 and caminho < 5:
-    print('começo while')
     
     while caminho == 1:
         print('\n-- ESTUDANTES --\n'
             '[1] Vizualizar Todos\n'
-            '[1] Pesquisar\n'
-            '[2] Adicionar\n'
-            '[3] Remover\n'
+            '[2] Pesquisar\n'
+            '[3] Adicionar\n'
+            '[4] Remover\n'
             '[0] voltar'
         )
         caminho = int(input())
@@ -59,7 +58,9 @@ while caminho > 0 and caminho < 5:
             func.del_data()
         elif caminho == 0:
             break
-    
+        
+        caminho = 1
+
     while caminho == 2:
         print(
             '\n-- PROFESSORES --\n'
@@ -81,6 +82,8 @@ while caminho > 0 and caminho < 5:
             func.del_data_prof()
         elif caminho == 0:
             break
+        
+        caminho = 2
     
     while caminho == 3:
         print(
@@ -100,6 +103,8 @@ while caminho > 0 and caminho < 5:
             print('metodologia 3 aqui')
         elif caminho == 0:
             break
+        
+        caminho = 3
     
     while caminho == 4:
         print(
@@ -119,6 +124,8 @@ while caminho > 0 and caminho < 5:
             func.listagem_espec()
         elif caminho == 0:
             break
+        
+        caminho =3
     
     print("\n-- Menu Principal --\nO que gostaria de acessar?")
     print(
@@ -130,4 +137,4 @@ while caminho > 0 and caminho < 5:
     )
     caminho = int(input())
 
-print("fim while  ")
+print("\n-+- PROGRAMA ENCERRADO -+-\n")
