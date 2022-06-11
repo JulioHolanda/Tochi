@@ -94,13 +94,14 @@ while caminho > 0 and caminho < 5:
             '[0] voltar'
         )
         caminho = int(input())
+        print()
         
         if caminho == 1:
-            func.metodologias()
+            func.metodologias(1)
         elif caminho == 2:
-            func.metodologias()
+            func.metodologias(2)
         elif caminho == 3:
-            func.metodologias()
+            func.metodologias(3)
         elif caminho == 0:
             break
         

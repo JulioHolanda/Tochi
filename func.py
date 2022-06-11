@@ -300,10 +300,10 @@ def listagem_espec():
 
         readData_file.close()
         
-def  metodologias():
+def  metodologias(caminho):
     
-    fileName = "metodologia" + caminho + ".txt"
+    fileName = "metodologia" + str(caminho) + ".txt"
 
     with open(fileName, 'r') as metodologia:
-        motodologiasRead = metodologia.read()
-        print(metodologiaRead)
+        metodologiasRead = metodologia.read()
+        print(metodologiasRead)
