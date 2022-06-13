@@ -88,49 +88,49 @@ with open('profData.csv', 'w', newline='') as data_file:
         203040,
         "CIÊNCIAS DA NATUREZA",
         "5B",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet"
     ])
     writer.writerow([
         "ADRÉIA",
         102030,
         "CIÊNCIAS DA NATUREZA",
         "5A",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet"
     ])
     writer.writerow([
         "DENNIS",
         605070,
         "MATEMÁTICA",
         "7C",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet"
     ])
     writer.writerow([
         "RAFAEL",
         6666666,
         "CIÊNCIAS HUMANAS",
         "7A",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet"
     ])
     writer.writerow([
         "MARCOS",
         454545,
         "CIÊNCIAS HUMANAS",
         "7A",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet"
     ])
     writer.writerow([
         "ELIANA",
         505060,
         "CIÊNCIAS HUMANAS",
         "7B",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet"
     ])
     writer.writerow([
         "ELIZATEBE",
         334453,
         "LINGUÁGENS",
         "5A",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet"
     ])
 
     data_file.close()
@@ -150,37 +150,37 @@ with open('especData.csv', 'w', newline='') as data_file:
         "ALICE",
         "(81) 1234-5678",
         "PSICOLOGIA",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     ])
     writer.writerow([
         "ROBERTO",
         "(81) 9876-5432",
         "PSICOLOGIA",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     ])
     writer.writerow([
         "CARLOS",
         "(81) 1234-5678",
         "PSIQUIATRIA",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     ])
     writer.writerow([
         "EDUARDO",
         "(81) 9876-5432",
         "PSICOLOGIA",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     ])
     writer.writerow([
         "ERIKA",
         "(81) 1234-5678",
         "PSICOLOGIA",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     ])
     writer.writerow([
         "GILBERTO",
         "(81) 9876-5432",
         "PSIQUIATRIA",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     ])
 
     data_file.close()

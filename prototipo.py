@@ -114,7 +114,7 @@ while caminho > 0 and caminho < 5:
         "[1] Estudantes\n"
         "[2] Professores\n"
         "[3] Metodologias\n"
-        "[4] Suporte\n"
+        "[4] Especialistas e Referências\n"
         "[0] Sair"
     )
     caminho = int(input())
