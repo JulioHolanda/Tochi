@@ -8,6 +8,12 @@ def login():
         '\n  -+- Tochi -+-\n\nVocê já possui uma conta? \n[S]sim\t[N]não: '
         ).lower()
     
+    while resposta != 's' and resposta !="n":
+        print("\n *insira uma resposta válida*")
+        resposta=input(
+        '\n  -+- Tochi -+-\n\nVocê já possui uma conta? \n[S]sim\t[N]não: '
+        ).lower()
+    
     if resposta=='s':
         while existe == 0:
             cadastrado=input('\nInsira seu nome ou email:').upper()
@@ -26,7 +32,7 @@ def login():
                             'Crie uma conta ou tente novamente.')
                 arquivo.close()
 
-    if resposta=='n':
+    elif resposta=='n':
         print('\n - Criação de conta - ')
 
         email=input('Insira um email válido: ').upper()
